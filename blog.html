@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Read AboudTech's technology notes on semantic HTML, accessible forms, and navigation between web pages."
+    />
+    <title>Technology Blog | AboudTech</title>
+  </head>
+  <body>
+    <header>
+      <h1>Technology Blog</h1>
+      <p>AboudTech notes on building clear, useful websites and applications.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="profile.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Explore Topics</h2>
+        <p>Browse these short articles about HTML foundations.</p>
+        <ul>
+          <li><a href="#semantic-html">Giving Content Meaning with HTML</a></li>
+          <li><a href="#accessible-forms">Making Forms Easier to Complete</a></li>
+          <li><a href="#page-navigation">Connecting a Multi-Page Website</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technology Notes</h2>
+
+        <article id="semantic-html">
+          <h3>Giving Content Meaning with HTML</h3>
+          <p>
+            Semantic HTML identifies the purpose of each part of a page. A
+            navigation element contains navigation links, the main element holds
+            the primary content, and an article contains a piece that can make
+            sense on its own.
+          </p>
+          <p>
+            Clear headings help readers follow the page and help people using
+            assistive technologies find the information they need. Choosing
+            meaningful elements also makes the source easier to understand.
+          </p>
+          <p>
+            <a href="profile.html">See the sections and project articles on the About Me page</a>
+          </p>
+        </article>
+
+        <article id="accessible-forms">
+          <h3>Making Forms Easier to Complete</h3>
+          <p>
+            Every form control needs a clear label. Connecting a label to an
+            input helps people understand what to enter, while a fieldset and
+            legend can explain a related group of choices.
+          </p>
+          <p>
+            Input types such as email and telephone describe the expected
+            information. Required fields and length limits provide native
+            browser validation. Clear instructions should also explain what
+            happens when the form is submitted.
+          </p>
+          <p><a href="contact.html">Explore the HTML contact form</a></p>
+        </article>
+
+        <article id="page-navigation">
+          <h3>Connecting a Multi-Page Website</h3>
+          <p>
+            Consistent navigation helps visitors move between pages without
+            learning a different menu each time. Keeping the same link labels
+            and order makes a small website easier to explore.
+          </p>
+          <p>
+            Relative links connect files within the same project. For example,
+            a link to <code>index.html</code> opens the homepage. Each destination
+            should have a descriptive title and a clear main heading so visitors
+            can understand where they have arrived.
+          </p>
+          <p><a href="index.html">Return to the AboudTech homepage</a></p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 AboudTech. All rights reserved.</p>
+      <p><a href="index.html">Back to the homepage</a></p>
+    </footer>
+  </body>
+</html>

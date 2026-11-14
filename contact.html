@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find AboudTech's public developer profile and practice completing an accessible HTML contact form with native browser validation."
+    />
+    <title>Contact | AboudTech</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact AboudTech</h1>
+      <p>Software development and technology solutions.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="profile.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contact Information</h2>
+        <p>
+          AboudTech is founded by Abedalrhman Tamimi. You can find his public
+          developer profile on GitHub or read more about his interests and
+          projects on the About Me page.
+        </p>
+        <ul>
+          <li><a href="https://github.com/Aboudtam">Visit Aboudtam on GitHub</a></li>
+          <li><a href="profile.html">About Abedalrhman Tamimi</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact Form Practice</h2>
+        <p id="form-notice">
+          This form is an HTML-only learning exercise. It does not deliver a
+          message. Backend processing will be added in a later stage.
+        </p>
+        <p id="submission-notice">
+          Use sample details only. Submitting this practice form reloads this
+          page with the entered values in the URL.
+        </p>
+        <p>Fields marked "required" must be completed.</p>
+
+        <form
+          action="contact.html"
+          method="get"
+          aria-describedby="form-notice submission-notice"
+        >
+          <fieldset>
+            <legend>Your Details</legend>
+            <p>
+              <label for="full-name">Full name (required)</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                minlength="2"
+                maxlength="100"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email address (required)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                maxlength="254"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone number (required)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                minlength="7"
+                maxlength="25"
+                aria-describedby="phone-help"
+                required
+              />
+            </p>
+            <p id="phone-help">
+              Use 7 to 25 characters. Spaces, a country code, and separators may
+              be included; this exercise does not verify whether a number exists.
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your Message</legend>
+            <p>
+              <label for="subject">Subject (required)</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                minlength="3"
+                maxlength="120"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Message (required)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                cols="40"
+                minlength="20"
+                maxlength="2000"
+                aria-describedby="message-help"
+                required
+              ></textarea>
+            </p>
+            <p id="message-help">Write between 20 and 2,000 characters.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferred Contact Method (required)</legend>
+            <p>
+              <input
+                type="radio"
+                id="prefer-email"
+                name="contact-method"
+                value="email"
+                required
+              />
+              <label for="prefer-email">Email</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="prefer-phone"
+                name="contact-method"
+                value="phone"
+                required
+              />
+              <label for="prefer-phone">Phone</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <input
+              type="checkbox"
+              id="agreement"
+              name="agreement"
+              value="sample-details-only"
+              required
+            />
+            <label for="agreement">
+              I understand that this is a practice form and agree to use sample
+              details only (required).
+            </label>
+          </p>
+          <button type="submit">Submit practice form</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 AboudTech. All rights reserved.</p>
+      <p><a href="index.html">Back to the AboudTech homepage</a></p>
+    </footer>
+  </body>
+</html>
