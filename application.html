@@ -3,354 +3,603 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Keep this policy: it blocks all form submission requests for this demo. -->
+    <!-- Demo safety: blocks actual form submission -->
     <meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
     <meta
       name="description"
-      content="Practice completing an accessible internship application form for AboudTech. This HTML-only demonstration does not submit real applications."
+      content="Practice completing an accessible internship application form for AboudTech. This demo does not submit applications."
     />
     <title>Training Application Demo | AboudTech</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Training Application Demo</h1>
-      <p>Practice applying for student training at AboudTech.</p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html">About Me</a></li>
-          <li><a href="application.html" aria-current="page">Apply for Training</a></li>
-        </ul>
-      </nav>
-      <p><a href="#application-form">Skip to the application form</a></p>
+    <!-- Shared Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development &amp; Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+
+            <li>
+              <a href="application.html" aria-current="page">
+                Apply for Training
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Before You Begin</h2>
-        <p id="demo-notice">
-          This is a demonstration for the H04 HTML learning challenge, not a real
-          application service or an announcement of training vacancies. Use
-          sample information only. Applications are not submitted, and AboudTech
-          does not receive or store the information entered here.
-        </p>
-        <p id="validation-notice">
-          Choose "Check application (demo only)" to use your browser's validation.
-          If a field is invalid, the browser will identify a problem. When all
-          fields are valid, this page's submission policy blocks the request.
-          The form stays here without a confirmation message, and no entered
-          values are added to the URL or sent to a service. Use a current browser
-          with Content Security Policy support for this demo.
-        </p>
+    <main class="home-main application-page">
+      <!-- Application Hero -->
+      <section
+        class="contact-cta application-hero"
+        aria-labelledby="application-title"
+      >
+        <span class="section-label">HTML FORM PRACTICE</span>
+        <h2 id="application-title">
+          Training Application
+          <span>Demo</span>
+        </h2>
         <p>
-          A backend will be needed to receive, securely validate, store, and
-          process real applications. This page cannot check whether contact
-          details or profile links belong to a real person.
+          Practice completing a structured and accessible application form with
+          native HTML5 validation.
         </p>
-        <ul>
-          <li>Fields marked "required" must be completed.</li>
-          <li>GitHub, portfolio, and programming language selections are optional.</li>
-          <li>Use Tab and Shift+Tab to move between controls.</li>
-          <li>Use arrow keys for radio choices and Space to toggle checkboxes.</li>
-          <li>Date and year limits are fixed demo examples, not eligibility rules.</li>
-        </ul>
+        <a href="#application-form" class="btn btn-primary">
+          Explore Application Form
+          <span aria-hidden="true">&darr;</span>
+        </a>
       </section>
 
-      <section>
-        <h2>Student Application Form</h2>
-        <!-- Native validation runs first. The form-action 'none' policy above blocks the POST request. -->
-        <form
-          id="application-form"
-          action="application.html"
-          method="post"
-          autocomplete="off"
-          aria-describedby="demo-notice validation-notice"
-        >
-          <fieldset>
-            <legend>Personal Details</legend>
-            <p>
-              <label for="first-name">First name (required)</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                minlength="1"
-                maxlength="80"
-                required
-              />
-            </p>
-            <p>
-              <label for="last-name">Last name (required)</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                minlength="1"
-                maxlength="80"
-                required
-              />
-            </p>
-            <p>
-              <label for="email">Email address (required)</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                maxlength="254"
-                required
-              />
-            </p>
-            <p>
-              <label for="phone">Phone number (required)</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                minlength="7"
-                maxlength="25"
-                aria-describedby="phone-help"
-                required
-              />
-            </p>
-            <p id="phone-help">
-              Enter 7 to 25 characters. Spaces and a country code may be included.
-              This field checks length, not whether a phone number is valid.
-            </p>
-            <p>
-              <label for="birth-date">Date of birth (required)</label>
-              <input
-                type="date"
-                id="birth-date"
-                name="birth-date"
-                min="1900-01-01"
-                max="2026-11-14"
-                aria-describedby="birth-date-help"
-                required
-              />
-            </p>
-            <p id="birth-date-help">
-              Demo range: January 1, 1900 to November 14, 2026.
-            </p>
-            <p>
-              <label for="city">City (required)</label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                minlength="2"
-                maxlength="100"
-                required
-              />
-            </p>
-          </fieldset>
+      <!-- Instructions -->
+      <section class="application-intro" aria-labelledby="before-title">
+        <div class="section-heading">
+          <span class="section-label">BEFORE YOU BEGIN</span>
+          <h2 id="before-title">How This Demo Works</h2>
+          <p>
+            An educational form created to practice HTML5 input controls and
+            browser validation.
+          </p>
+        </div>
 
-          <fieldset>
-            <legend>Education</legend>
-            <p>
-              <label for="university">University (required)</label>
-              <input
-                type="text"
-                id="university"
-                name="university"
-                minlength="2"
-                maxlength="150"
-                required
-              />
-            </p>
-            <p>
-              <label for="major">Major (required)</label>
-              <input
-                type="text"
-                id="major"
-                name="major"
-                minlength="2"
-                maxlength="120"
-                required
-              />
-            </p>
-            <p>
-              <label for="academic-year">Academic year (required)</label>
-              <select id="academic-year" name="academic-year" required>
-                <option value="">Choose your academic year</option>
-                <option value="1">First year</option>
-                <option value="2">Second year</option>
-                <option value="3">Third year</option>
-                <option value="4">Fourth year</option>
-                <option value="5">Fifth year</option>
-                <option value="6-or-later">Sixth year or later</option>
-                <option value="postgraduate">Postgraduate</option>
-              </select>
-            </p>
-            <p>
-              <label for="graduation-year">Expected graduation year (required)</label>
-              <input
-                type="number"
-                id="graduation-year"
-                name="graduation-year"
-                min="2026"
-                max="2100"
-                step="1"
-                aria-describedby="graduation-help"
-                required
-              />
-            </p>
-            <p id="graduation-help">Enter a whole year from 2026 to 2100 for this demo.</p>
-          </fieldset>
+        <div class="application-notice" id="demo-notice">
+          <strong>Training Exercise — Not a Real Application</strong>
+          <p>
+            This is a demonstration for the H04 HTML learning challenge, not a
+            real application service or an announcement of training vacancies.
+          </p>
+          <p>
+            Use fictional sample information only. Applications are not
+            submitted, and AboudTech does not receive or store the information
+            entered here.
+          </p>
+        </div>
 
-          <fieldset>
-            <legend>Training Preferences</legend>
+        <div class="application-info-grid">
+          <article class="application-info-card">
+            <span class="application-info-number">01</span>
+            <h3>Complete the Fields</h3>
             <p>
-              <label for="training-track">Preferred training track (required)</label>
-              <select id="training-track" name="training-track" required>
-                <option value="">Choose a sample training track</option>
-                <option value="web-foundations">HTML and CSS Foundations</option>
-                <option value="full-stack">Full Stack Web Development</option>
-                <option value="mobile">Mobile Application Development</option>
-                <option value="algorithms">Algorithms and Data Structures</option>
-              </select>
+              Fields marked "required" must be completed. GitHub, portfolio, and
+              programming language selections are optional.
             </p>
-            <p>
-              <label for="start-date">Available start date (required)</label>
-              <input
-                type="date"
-                id="start-date"
-                name="start-date"
-                min="2026-11-14"
-                aria-describedby="start-date-help"
-                required
-              />
-            </p>
-            <p id="start-date-help">
-              Choose November 14, 2026 or later for this demo. These fixed dates
-              do not update automatically.
-            </p>
-          </fieldset>
+          </article>
 
-          <fieldset>
-            <legend>Current Programming Experience (required)</legend>
-            <p>Choose the description that best matches your current experience.</p>
-            <p>
-              <input type="radio" id="experience-new" name="experience" value="new" required />
-              <label for="experience-new">I am new to programming.</label>
+          <article class="application-info-card">
+            <span class="application-info-number">02</span>
+            <h3>Test Validation</h3>
+            <p id="validation-notice">
+              Select "Check Application" to run browser validation. Invalid
+              fields are identified. If everything is valid, the demo's security
+              policy blocks the POST request.
             </p>
-            <p>
-              <input type="radio" id="experience-basics" name="experience" value="basics" required />
-              <label for="experience-basics">I have practiced programming basics.</label>
-            </p>
-            <p>
-              <input type="radio" id="experience-projects" name="experience" value="projects" required />
-              <label for="experience-projects">I have built small projects.</label>
-            </p>
-            <p>
-              <input type="radio" id="experience-independent" name="experience" value="independent" required />
-              <label for="experience-independent">I can develop applications independently.</label>
-            </p>
-          </fieldset>
+          </article>
 
-          <fieldset>
-            <legend>Programming Languages (optional)</legend>
-            <p>Select all languages you have used, or leave this group blank.</p>
+          <article class="application-info-card">
+            <span class="application-info-number">03</span>
+            <h3>Practice Accessibility</h3>
             <p>
-              <input type="checkbox" id="language-javascript" name="languages" value="javascript" />
-              <label for="language-javascript">JavaScript</label>
+              Use Tab and Shift+Tab to navigate, arrow keys to choose radio
+              options, and Space to toggle checkboxes.
             </p>
-            <p>
-              <input type="checkbox" id="language-java" name="languages" value="java" />
-              <label for="language-java">Java</label>
-            </p>
-            <p>
-              <input type="checkbox" id="language-dart" name="languages" value="dart" />
-              <label for="language-dart">Dart</label>
-            </p>
-            <p>
-              <input type="checkbox" id="language-python" name="languages" value="python" />
-              <label for="language-python">Python</label>
-            </p>
-            <p>
-              <input type="checkbox" id="language-cpp" name="languages" value="cpp" />
-              <label for="language-cpp">C++</label>
-            </p>
-            <p>
-              <input type="checkbox" id="language-csharp" name="languages" value="csharp" />
-              <label for="language-csharp">C#</label>
-            </p>
-          </fieldset>
+          </article>
+        </div>
 
-          <fieldset>
-            <legend>Online Profiles (optional)</legend>
-            <p id="url-help">
-              Enter complete URLs, including https://. Leave a field blank if you
-              do not have that profile. URL format is checked, but links are not opened.
-            </p>
-            <p>
-              <label for="github-url">GitHub profile URL (optional)</label>
-              <input
-                type="url"
-                id="github-url"
-                name="github-url"
-                maxlength="2000"
-                aria-describedby="url-help"
-              />
-            </p>
-            <p>
-              <label for="portfolio-url">Portfolio URL (optional)</label>
-              <input
-                type="url"
-                id="portfolio-url"
-                name="portfolio-url"
-                maxlength="2000"
-                aria-describedby="url-help"
-              />
-            </p>
-          </fieldset>
+        <p class="application-small-note">
+          Date and year limits are fixed demonstration examples, not eligibility
+          rules. This page cannot verify whether contact details or profile
+          links are real. A secure backend would be required to receive,
+          validate, store, and process real applications. In this demo, a valid
+          form does not show a success confirmation because submission is
+          intentionally blocked.
+        </p>
+      </section>
 
-          <fieldset>
-            <legend>Motivation and Agreement</legend>
-            <p>
-              <label for="motivation">Motivation message (required)</label>
-              <textarea
-                id="motivation"
-                name="motivation"
-                rows="8"
-                cols="40"
-                minlength="50"
-                maxlength="2000"
-                aria-describedby="motivation-help"
-                required
-              ></textarea>
-            </p>
-            <p id="motivation-help">
-              Use 50 to 2,000 characters to describe what you would like to learn
-              and why this training interests you. Use sample content for the demo.
-            </p>
-            <p>
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms"
-                value="demo-acknowledged"
-                required
-              />
-              <label for="terms">
-                I agree to the demo terms: I will use sample information and
-                understand that no application will be submitted (required).
-              </label>
-            </p>
-          </fieldset>
+      <!-- Main Application Form -->
+      <section class="application-section" aria-labelledby="form-title">
+        <div class="section-heading">
+          <span class="section-label">STUDENT APPLICATION</span>
+          <h2 id="form-title">Application Form</h2>
+          <p>
+            Work through each section and test how native HTML validation
+            behaves.
+          </p>
+        </div>
 
-          <button type="submit">Check application (demo only)</button>
-        </form>
+        <div class="application-form-panel">
+          <div class="application-form-header">
+            <span class="section-label">ABOUDTECH TRAINING DEMO</span>
+            <h3>Student Information</h3>
+            <p>Use sample details only. This form does not send data.</p>
+          </div>
+
+          <!-- Native validation first; CSP blocks the POST -->
+          <form
+            id="application-form"
+            action="application.html"
+            method="post"
+            autocomplete="off"
+            aria-describedby="demo-notice validation-notice"
+          >
+            <!-- Personal Details -->
+            <fieldset class="application-fieldset">
+              <legend>01 — Personal Details</legend>
+              <div class="application-field-grid">
+                <div class="application-field">
+                  <label for="first-name">First name (required)</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    minlength="1"
+                    maxlength="80"
+                    required
+                  />
+                </div>
+
+                <div class="application-field">
+                  <label for="last-name">Last name (required)</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    minlength="1"
+                    maxlength="80"
+                    required
+                  />
+                </div>
+
+                <div class="application-field">
+                  <label for="email">Email address (required)</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxlength="254"
+                    required
+                  />
+                </div>
+
+                <div class="application-field">
+                  <label for="phone">Phone number (required)</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    minlength="7"
+                    maxlength="25"
+                    aria-describedby="phone-help"
+                    required
+                  />
+                  <small id="phone-help">
+                    7–25 characters. Length is checked, not whether the number
+                    exists.
+                  </small>
+                </div>
+
+                <div class="application-field">
+                  <label for="birth-date">Date of birth (required)</label>
+                  <input
+                    type="date"
+                    id="birth-date"
+                    name="birth-date"
+                    min="1900-01-01"
+                    max="2026-11-14"
+                    aria-describedby="birth-date-help"
+                    required
+                  />
+                  <small id="birth-date-help">
+                    Demo range: January 1, 1900 to November 14, 2026.
+                  </small>
+                </div>
+
+                <div class="application-field">
+                  <label for="city">City (required)</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    minlength="2"
+                    maxlength="100"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset class="application-fieldset">
+              <legend>02 — Education</legend>
+              <div class="application-field-grid">
+                <div class="application-field">
+                  <label for="university">University (required)</label>
+                  <input
+                    type="text"
+                    id="university"
+                    name="university"
+                    minlength="2"
+                    maxlength="150"
+                    required
+                  />
+                </div>
+
+                <div class="application-field">
+                  <label for="major">Major (required)</label>
+                  <input
+                    type="text"
+                    id="major"
+                    name="major"
+                    minlength="2"
+                    maxlength="120"
+                    required
+                  />
+                </div>
+
+                <div class="application-field">
+                  <label for="academic-year">Academic year (required)</label>
+                  <select id="academic-year" name="academic-year" required>
+                    <option value="">Choose your academic year</option>
+                    <option value="1">First year</option>
+                    <option value="2">Second year</option>
+                    <option value="3">Third year</option>
+                    <option value="4">Fourth year</option>
+                    <option value="5">Fifth year</option>
+                    <option value="6-or-later">Sixth year or later</option>
+                    <option value="postgraduate">Postgraduate</option>
+                  </select>
+                </div>
+
+                <div class="application-field">
+                  <label for="graduation-year">
+                    Expected graduation year (required)
+                  </label>
+                  <input
+                    type="number"
+                    id="graduation-year"
+                    name="graduation-year"
+                    min="2026"
+                    max="2100"
+                    step="1"
+                    aria-describedby="graduation-help"
+                    required
+                  />
+                  <small id="graduation-help">
+                    Enter a whole year from 2026 to 2100.
+                  </small>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Training Preferences -->
+            <fieldset class="application-fieldset">
+              <legend>03 — Training Preferences</legend>
+              <div class="application-field-grid">
+                <div class="application-field">
+                  <label for="training-track">
+                    Preferred training track (required)
+                  </label>
+                  <select id="training-track" name="training-track" required>
+                    <option value="">Choose a sample training track</option>
+                    <option value="web-foundations">
+                      HTML and CSS Foundations
+                    </option>
+                    <option value="full-stack">
+                      Full Stack Web Development
+                    </option>
+                    <option value="mobile">
+                      Mobile Application Development
+                    </option>
+                    <option value="algorithms">
+                      Algorithms and Data Structures
+                    </option>
+                  </select>
+                </div>
+
+                <div class="application-field">
+                  <label for="start-date">
+                    Available start date (required)
+                  </label>
+                  <input
+                    type="date"
+                    id="start-date"
+                    name="start-date"
+                    min="2026-11-14"
+                    aria-describedby="start-date-help"
+                    required
+                  />
+                  <small id="start-date-help">
+                    Choose November 14, 2026 or later. This limit does not
+                    update automatically.
+                  </small>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Experience -->
+            <fieldset class="application-fieldset">
+              <legend>04 — Programming Experience (required)</legend>
+              <p class="application-help">
+                Choose the description that best matches your current
+                programming experience.
+              </p>
+              <div class="application-choice-grid">
+                <div class="application-choice">
+                  <input
+                    type="radio"
+                    id="experience-new"
+                    name="experience"
+                    value="new"
+                    required
+                  />
+                  <label for="experience-new"> I am new to programming. </label>
+                </div>
+
+                <div class="application-choice">
+                  <input
+                    type="radio"
+                    id="experience-basics"
+                    name="experience"
+                    value="basics"
+                    required
+                  />
+                  <label for="experience-basics">
+                    I have practiced programming basics.
+                  </label>
+                </div>
+
+                <div class="application-choice">
+                  <input
+                    type="radio"
+                    id="experience-projects"
+                    name="experience"
+                    value="projects"
+                    required
+                  />
+                  <label for="experience-projects">
+                    I have built small projects.
+                  </label>
+                </div>
+
+                <div class="application-choice">
+                  <input
+                    type="radio"
+                    id="experience-independent"
+                    name="experience"
+                    value="independent"
+                    required
+                  />
+                  <label for="experience-independent">
+                    I can develop applications independently.
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Languages -->
+            <fieldset class="application-fieldset">
+              <legend>05 — Programming Languages (optional)</legend>
+              <p class="application-help">
+                Select all languages you have used, or leave this group blank.
+              </p>
+              <div class="application-choice-grid">
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-javascript"
+                    name="languages"
+                    value="javascript"
+                  />
+                  <label for="language-javascript">JavaScript</label>
+                </div>
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-java"
+                    name="languages"
+                    value="java"
+                  />
+                  <label for="language-java">Java</label>
+                </div>
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-dart"
+                    name="languages"
+                    value="dart"
+                  />
+                  <label for="language-dart">Dart</label>
+                </div>
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-python"
+                    name="languages"
+                    value="python"
+                  />
+                  <label for="language-python">Python</label>
+                </div>
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-cpp"
+                    name="languages"
+                    value="cpp"
+                  />
+                  <label for="language-cpp">C++</label>
+                </div>
+                <div class="application-choice">
+                  <input
+                    type="checkbox"
+                    id="language-csharp"
+                    name="languages"
+                    value="csharp"
+                  />
+                  <label for="language-csharp">C#</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Online Profiles -->
+            <fieldset class="application-fieldset">
+              <legend>06 — Online Profiles (optional)</legend>
+              <p id="url-help" class="application-help">
+                Enter a complete URL including https://. Leave a field blank if
+                you do not have a profile. URL format is checked, but links are
+                not opened.
+              </p>
+              <div class="application-field-grid">
+                <div class="application-field">
+                  <label for="github-url">
+                    GitHub profile URL (optional)
+                  </label>
+                  <input
+                    type="url"
+                    id="github-url"
+                    name="github-url"
+                    maxlength="2000"
+                    aria-describedby="url-help"
+                  />
+                </div>
+                <div class="application-field">
+                  <label for="portfolio-url"> Portfolio URL (optional) </label>
+                  <input
+                    type="url"
+                    id="portfolio-url"
+                    name="portfolio-url"
+                    maxlength="2000"
+                    aria-describedby="url-help"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Motivation -->
+            <fieldset class="application-fieldset">
+              <legend>07 — Motivation &amp; Agreement</legend>
+              <div class="application-field">
+                <label for="motivation"> Motivation message (required) </label>
+                <textarea
+                  id="motivation"
+                  name="motivation"
+                  rows="8"
+                  cols="40"
+                  minlength="50"
+                  maxlength="2000"
+                  aria-describedby="motivation-help"
+                  required
+                ></textarea>
+                <small id="motivation-help">
+                  Use 50–2,000 characters to explain what you want to learn and
+                  why the training interests you. Use sample content only.
+                </small>
+              </div>
+
+              <div class="application-choice application-agreement">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  value="demo-acknowledged"
+                  required
+                />
+                <label for="terms">
+                  I agree to the demo terms: I will use sample information and
+                  understand that no application will be submitted (required).
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="application-submit">
+              Check Application (Demo Only)
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Bottom Section -->
+      <section
+        class="contact-cta application-bottom-cta"
+        aria-labelledby="application-bottom-title"
+      >
+        <span class="section-label">EXPLORE MORE</span>
+        <h2 id="application-bottom-title">Continue Exploring AboudTech</h2>
+        <p>
+          Discover our software development services and learn about the person
+          behind the brand.
+        </p>
+        <div class="hero-actions application-actions">
+          <a href="services.html" class="btn btn-primary"> Our Services </a>
+          <a href="profile.html" class="btn btn-outline">
+            About the Developer
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 AboudTech. All rights reserved.</p>
-      <p><a href="contact.html">Back to the Contact page</a></p>
-      <p><a href="index.html">Back to the AboudTech homepage</a></p>
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development &amp; Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">About Me</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 AboudTech. All rights reserved.</p>
+          <p>Training application demonstration.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -5,125 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore AboudTech's website development, custom web application, and software maintenance services, with examples of the needs each service addresses."
+      content="Explore AboudTech's website development, custom web applications, and software maintenance services."
     />
     <title>Software Development Services | AboudTech</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Software Development Services</h1>
-      <p>AboudTech focuses on practical websites and software applications.</p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html" aria-current="page">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html">About Me</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development &amp; Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="services.html" aria-current="page">Services</a>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="application.html">Apply for Training</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Development and Support</h2>
+    <main class="home-main services-page">
+      <!-- Page Hero -->
+      <section
+        class="contact-cta services-hero"
+        aria-labelledby="services-title"
+      >
+        <span class="section-label">WHAT WE DO</span>
+
+        <h2 id="services-title">
+          Smart Solutions.
+          <span>Real Results.</span>
+        </h2>
+
         <p>
-          AboudTech's service focus covers introducing a business online,
-          supporting everyday tasks with custom applications, and improving
-          existing software. The scope of a project starts with the needs of
-          the people who will use it.
+          From modern business websites to custom applications and software
+          support, AboudTech focuses on practical solutions built around real
+          needs.
         </p>
 
-        <article>
-          <h3>Website Development</h3>
-          <p>
-            A business website should make essential information easy to find.
-            This work focuses on clear page structure, useful content, and
-            navigation that helps visitors understand a business and its services.
-          </p>
-          <ul>
-            <li>Company introductions and service pages.</li>
-            <li>Personal profiles and project portfolios.</li>
-            <li>Accessible headings, links, and form labels.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Custom Web Applications</h3>
-          <p>
-            Custom applications can organize information and support tasks that
-            are specific to a business. Planning includes identifying the data
-            involved, the actions users need, and how those actions fit together.
-          </p>
-          <ul>
-            <li>Organizing business records and daily work.</li>
-            <li>Planning booking and management workflows.</li>
-            <li>Connecting application features with appropriate data storage.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Software Maintenance and Support</h3>
-          <p>
-            Existing software needs attention as requirements change. Maintenance
-            focuses on understanding reported problems, correcting defects, and
-            improving features while keeping the code understandable.
-          </p>
-          <ul>
-            <li>Investigating and fixing software problems.</li>
-            <li>Improving existing features and usability.</li>
-            <li>Reviewing code and documenting changes.</li>
-          </ul>
-        </article>
+        <a href="#service-areas" class="btn btn-primary">
+          Explore Our Services
+          <span aria-hidden="true">&darr;</span>
+        </a>
       </section>
 
-      <section>
-        <h2>Compare Service Areas</h2>
-        <table>
-          <caption>Examples of needs addressed by each service area</caption>
-          <thead>
-            <tr>
-              <th scope="col">Service</th>
-              <th scope="col">Main Purpose</th>
-              <th scope="col">Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Website Development</th>
-              <td>Present information clearly to visitors.</td>
-              <td>A company website with about, services, and contact pages.</td>
-            </tr>
-            <tr>
-              <th scope="row">Custom Web Applications</th>
-              <td>Support a specific business workflow.</td>
-              <td>An application for organizing bookings or business records.</td>
-            </tr>
-            <tr>
-              <th scope="row">Software Maintenance and Support</th>
-              <td>Improve and maintain existing software.</td>
-              <td>Correcting a reported defect or improving a feature.</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Services Introduction -->
+      <section
+        id="service-areas"
+        class="services-section"
+        aria-labelledby="service-areas-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">OUR EXPERTISE</span>
+          <h2 id="service-areas-title">Development &amp; Support</h2>
+
+          <p>
+            Our service focus covers introducing a business online, supporting
+            daily tasks with applications, and improving existing software.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <!-- Website Development -->
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
+
+            <h3>Website Development</h3>
+
+            <p>
+              A business website should make essential information easy to find.
+            </p>
+
+            <p>
+              This work focuses on clear page structure, useful content, and
+              navigation that helps visitors understand a business and its
+              services.
+            </p>
+
+            <h4>What This Includes</h4>
+
+            <ul class="service-features">
+              <li>Company introductions and service pages.</li>
+              <li>Personal profiles and project portfolios.</li>
+              <li>Accessible headings, links, and form labels.</li>
+            </ul>
+          </article>
+
+          <!-- Web Applications -->
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <span class="service-icon" aria-hidden="true">{ }</span>
+
+            <h3>Custom Web Applications</h3>
+
+            <p>
+              Custom applications organize information and support tasks that
+              are specific to a business.
+            </p>
+
+            <p>
+              Planning includes identifying the data involved, the actions users
+              need, and how those actions fit together.
+            </p>
+
+            <h4>What This Includes</h4>
+
+            <ul class="service-features">
+              <li>Organizing business records and daily work.</li>
+              <li>Planning booking and management workflows.</li>
+              <li>
+                Connecting application features with appropriate data storage.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Maintenance -->
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <span class="service-icon" aria-hidden="true">&#9881;</span>
+
+            <h3>Software Maintenance &amp; Support</h3>
+
+            <p>Existing software needs attention as requirements change.</p>
+
+            <p>
+              Maintenance focuses on understanding reported problems, correcting
+              defects, and improving features while keeping code understandable.
+            </p>
+
+            <h4>What This Includes</h4>
+
+            <ul class="service-features">
+              <li>Investigating and fixing software problems.</li>
+              <li>Improving existing features and usability.</li>
+              <li>Reviewing code and documenting changes.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Plan Your Next Step</h2>
+      <!-- Comparison Section -->
+      <section class="services-comparison" aria-labelledby="comparison-title">
+        <div class="section-heading">
+          <span class="section-label">FIND YOUR SOLUTION</span>
+
+          <h2 id="comparison-title">Compare Our Service Areas</h2>
+
+          <p>
+            Each service addresses a different type of software development
+            need.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <caption>
+              Examples of needs addressed by each service area
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Main Purpose</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Website Development</th>
+                <td>Present information clearly to visitors.</td>
+                <td>
+                  A company website with about, services, and contact pages.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Custom Web Applications</th>
+                <td>Support a specific business workflow.</td>
+                <td>
+                  An application for organizing bookings or business records.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Software Maintenance &amp; Support</th>
+                <td>Improve and maintain existing software.</td>
+                <td>Correcting a reported defect or improving a feature.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Work Approach -->
+      <section class="services-process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <span class="section-label">OUR PROCESS</span>
+          <h2 id="process-title">Plan Your Next Step</h2>
+
+          <p>
+            Every useful solution starts with understanding the challenge it
+            needs to solve.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="process-step">01</span>
+            <h3>Describe the Problem</h3>
+            <p>
+              Explain the challenge or difficulty you want your website or
+              application to address.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="process-step">02</span>
+            <h3>Identify the Users</h3>
+            <p>
+              Understand who will use the software and which tasks they need to
+              complete.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="process-step">03</span>
+            <h3>Define the Outcome</h3>
+            <p>
+              Determine what success looks like and which features may be
+              useful.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section
+        class="contact-cta services-cta"
+        aria-labelledby="services-cta-title"
+      >
+        <span class="section-label">LET'S GET STARTED</span>
+
+        <h2 id="services-cta-title">Ready to Discuss Your Idea?</h2>
+
         <p>
-          Start by describing the problem, the people affected, and the outcome
-          you want. These details help identify the type of software work that
-          may be useful.
+          Tell us about your project, explore our contact page, or discover more
+          about the founder's work.
         </p>
-        <p><a href="contact.html">View contact information and the practice form</a></p>
-        <p><a href="profile.html#projects">Explore the founder's projects</a></p>
+
+        <div class="hero-actions services-cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            Contact AboudTech &rarr;
+          </a>
+
+          <a href="profile.html#projects" class="btn btn-outline">
+            View Projects
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 AboudTech. All rights reserved.</p>
-      <p><a href="index.html">Back to the AboudTech homepage</a></p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development &amp; Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 AboudTech. All rights reserved.</p>
+          <p>Designed with purpose.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

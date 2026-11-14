@@ -5,196 +5,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Meet Abedalrhman Tamimi, a Computer Science student, aspiring Software Engineer, and founder of AboudTech. Explore my skills, projects, and career goals."
+      content="Meet Abedalrhman Tamimi, Computer Science student, aspiring Software Engineer, and founder of AboudTech."
     />
     <title>About Me | Abedalrhman Tamimi | AboudTech</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Abedalrhman Tamimi</h1>
-      <p>
-        I am a Computer Science student, aspiring Software Engineer, and software
-        and application developer. I am also the founder of AboudTech, my personal
-        software development brand.
-      </p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html" aria-current="page">About Me</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Profile navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Technical Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#interests">Interests and Career Goals</a></li>
-          <li><a href="#contact">Contact Information</a></li>
-        </ul>
-      </nav>
+    <!-- Main Website Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development &amp; Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="profile.html" aria-current="page">Profile</a>
+            </li>
+            <li><a href="application.html">Apply for Training</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          I enjoy exploring how software can solve practical problems. My
-          interests span web, mobile, and desktop applications, along with the
-          algorithms, databases, and deployment tools that support them.
-        </p>
-        <p>
-          Through AboudTech, I am developing a personal technology brand focused
-          on useful software solutions and applications. I aim to connect my
-          Computer Science studies with projects that address everyday business
-          needs while continuing to improve my development skills.
-        </p>
-        <figure>
-          <p>Personal profile photo placeholder.</p>
-          <!-- TODO: Add your own local photo, update the path below, and uncomment the image. Then remove the placeholder paragraph. -->
-          <!-- <img src="images/abedalrhman-tamimi.jpg" alt="Portrait of Abedalrhman Tamimi" /> -->
-          <figcaption>Abedalrhman Tamimi, founder of AboudTech.</figcaption>
+    <main class="home-main profile-page">
+      <!-- Personal Portfolio Hero -->
+      <section
+        id="about-me"
+        class="profile-hero"
+        aria-labelledby="profile-title"
+      >
+        <div class="profile-hero-content">
+          <span class="section-label">DEVELOPER PORTFOLIO</span>
+
+          <h2 id="profile-title">
+            Hi, I'm
+            <span>Abedalrhman Tamimi.</span>
+          </h2>
+
+          <p class="profile-role">
+            Computer Science Student | Aspiring Software Engineer
+          </p>
+
+          <p class="profile-intro">
+            I am a software and application developer and the founder of
+            AboudTech, my personal software development brand.
+          </p>
+
+          <p>
+            I enjoy exploring how software can solve practical problems. My
+            interests include web, mobile, and desktop applications, as well as
+            algorithms, databases, and deployment tools.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore My Projects &rarr;
+            </a>
+
+            <a href="#contact" class="btn btn-outline"> Get in Touch </a>
+          </div>
+        </div>
+
+        <figure class="profile-visual">
+          <div class="profile-avatar" aria-label="AT monogram">
+            <span aria-hidden="true">AT</span>
+          </div>
+
+          <div class="profile-visual-label">
+            <strong>AboudTech</strong>
+            <span>Founder &amp; Developer</span>
+          </div>
+
+          <figcaption>
+            Abedalrhman Tamimi, founder of AboudTech. A personal profile photo
+            may be added later.
+          </figcaption>
         </figure>
       </section>
 
-      <section id="education">
-        <h2>Education</h2>
-        <p>
-          I am a Computer Science student developing my understanding of
-          programming, algorithms, data structures, and software development.
-        </p>
-        <p>
-          I am also following the Grids Apps Full Stack Development Internship
-          Foundation Track. This page is part of the Day 01 Semantic Profile
-          challenge, where I am practicing HTML5 and accessible page structure.
-        </p>
+      <!-- Profile Section Navigation -->
+      <nav class="profile-section-nav" aria-label="Profile navigation">
+        <a href="#about-me">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Career Goals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Education -->
+      <section
+        id="education"
+        class="profile-section"
+        aria-labelledby="education-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">MY BACKGROUND</span>
+          <h2 id="education-title">Education &amp; Learning</h2>
+          <p>
+            Building a strong foundation in Computer Science through education
+            and practical development.
+          </p>
+        </div>
+
+        <div class="profile-two-column">
+          <article class="profile-info-card">
+            <span class="profile-card-symbol" aria-hidden="true"> CS </span>
+
+            <h3>Computer Science</h3>
+            <p>
+              I am a Computer Science student developing my understanding of
+              programming, algorithms, data structures, and software
+              development.
+            </p>
+          </article>
+
+          <article class="profile-info-card">
+            <span class="profile-card-symbol" aria-hidden="true"> FS </span>
+
+            <h3>Full Stack Development Training</h3>
+            <p>
+              I am following the Grids Apps Full Stack Development Internship
+              Foundation Track.
+            </p>
+            <p>
+              This profile began as part of the Day 01 Semantic Profile
+              challenge, focused on HTML5 and accessible page structure.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>My technical interests and experience cover the following areas:</p>
-        <ul>
-          <li>Web development with HTML, CSS, and JavaScript.</li>
-          <li>Mobile application development with Flutter and Dart.</li>
-          <li>Android application development.</li>
-          <li>Java programming and desktop interfaces with JavaFX.</li>
-          <li>Algorithms and data structures.</li>
-          <li>PostgreSQL databases.</li>
-          <li>Version control and collaboration with Git and GitHub.</li>
-          <li>Windows server administration and application deployment.</li>
-          <li>Full Stack Web Development.</li>
-        </ul>
+      <!-- Technical Skills -->
+      <section
+        id="skills"
+        class="profile-section"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">MY TOOLKIT</span>
+          <h2 id="skills-title">Technical Skills</h2>
+          <p>
+            Technologies and areas I work with, study, and continue to develop.
+          </p>
+        </div>
+
+        <div class="profile-skills-grid">
+          <article class="profile-skill-group">
+            <div class="profile-skill-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <ul class="profile-skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Full Stack Web Development</li>
+            </ul>
+          </article>
+
+          <article class="profile-skill-group">
+            <div class="profile-skill-icon" aria-hidden="true">APP</div>
+            <h3>Application Development</h3>
+            <ul class="profile-skill-list">
+              <li>Flutter &amp; Dart</li>
+              <li>Android Development</li>
+              <li>Java Programming</li>
+              <li>JavaFX</li>
+            </ul>
+          </article>
+
+          <article class="profile-skill-group">
+            <div class="profile-skill-icon" aria-hidden="true">DB</div>
+            <h3>Data &amp; Algorithms</h3>
+            <ul class="profile-skill-list">
+              <li>Algorithms</li>
+              <li>Data Structures</li>
+              <li>PostgreSQL</li>
+              <li>Database Design</li>
+            </ul>
+          </article>
+
+          <article class="profile-skill-group">
+            <div class="profile-skill-icon" aria-hidden="true">OPS</div>
+            <h3>Tools &amp; Deployment</h3>
+            <ul class="profile-skill-list">
+              <li>Git &amp; GitHub</li>
+              <li>Version Control</li>
+              <li>Windows Server Administration</li>
+              <li>Application Deployment</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>
-          These projects reflect my interest in practical applications and
-          Computer Science fundamentals. They include a developing brand,
-          application projects, and a planned software platform.
-        </p>
-
-        <article>
-          <h3>AboudTech — Software Development Brand</h3>
+      <!-- Projects -->
+      <section
+        id="projects"
+        class="profile-section"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">SELECTED WORK</span>
+          <h2 id="projects-title">My Projects</h2>
           <p>
-            I am developing AboudTech as my personal software development brand,
-            focused on building practical software solutions and applications.
-            It represents the direction I want to take as a developer and founder.
+            Projects and ideas reflecting my interests in software development
+            and practical solutions.
           </p>
-          <p><a href="index.html">Visit the AboudTech homepage</a></p>
-        </article>
+        </div>
 
-        <article>
-          <h3>Khazna — Financial Management System</h3>
-          <p>
-            My Khazna project focuses on financial management for a jewelry
-            workshop. Its scope covers cash transactions, income, expenses,
-            employee accounts, and investor profit allocations.
-          </p>
-        </article>
+        <div class="profile-project-grid">
+          <article class="profile-project-card">
+            <span class="profile-project-number">01</span>
+            <span class="profile-project-category">SOFTWARE BRAND</span>
+            <h3>AboudTech</h3>
+            <p>
+              My personal software development brand focused on building
+              practical applications and technology solutions for real needs.
+            </p>
+            <a href="index.html" class="profile-project-link">
+              Visit AboudTech &rarr;
+            </a>
+          </article>
 
-        <article>
-          <h3>Jewelry Workshop Management System</h3>
-          <p>
-            I am planning a comprehensive software platform for jewelry workshop
-            operations and business management. This project is at the planning
-            stage, with the aim of supporting the workshop's broader operational
-            needs.
-          </p>
-        </article>
+          <article class="profile-project-card">
+            <span class="profile-project-number">02</span>
+            <span class="profile-project-category">FINANCIAL SYSTEM</span>
+            <h3>Khazna</h3>
+            <p>
+              A financial management project for a jewelry workshop. Its scope
+              includes cash transactions, income, expenses, employee accounts,
+              and investor profit allocations.
+            </p>
+          </article>
 
-        <article>
-          <h3>Huffman Coding Project</h3>
-          <p>
-            My Huffman Coding project uses Dart and Flutter to implement
-            compression and decompression with custom data structures and
-            algorithms. It brings together my interests in algorithm design and
-            application development.
-          </p>
-        </article>
+          <article class="profile-project-card">
+            <span class="profile-project-number">03</span>
+            <span class="profile-project-category">PLANNED PLATFORM</span>
+            <h3>Jewelry Workshop Management System</h3>
+            <p>
+              A planned comprehensive software platform for jewelry workshop
+              operations and business management, intended to support broader
+              operational needs.
+            </p>
+          </article>
 
-        <article>
-          <h3>Android Car Rental Application</h3>
-          <p>
-            My Android Car Rental Application project focuses on car rental and
-            vehicle search functionality. It reflects my interest in building
-            mobile applications around practical user needs.
-          </p>
-        </article>
+          <article class="profile-project-card">
+            <span class="profile-project-number">04</span>
+            <span class="profile-project-category">ALGORITHMS</span>
+            <h3>Huffman Coding</h3>
+            <p>
+              A Dart and Flutter project implementing compression and
+              decompression using custom data structures and algorithms.
+            </p>
+          </article>
 
-        <article>
-          <h3>iBook × Jawwal Website</h3>
-          <p>
-            My iBook × Jawwal website project involves responsive layouts, user
-            interface design, and interactive website components. It reflects my
-            interest in how clear interfaces help people use web applications.
-          </p>
-        </article>
+          <article class="profile-project-card">
+            <span class="profile-project-number">05</span>
+            <span class="profile-project-category">ANDROID APP</span>
+            <h3>Car Rental Application</h3>
+            <p>
+              An Android application project focused on vehicle search and car
+              rental functionality, built around practical user needs.
+            </p>
+          </article>
+
+          <article class="profile-project-card">
+            <span class="profile-project-number">06</span>
+            <span class="profile-project-category">WEB INTERFACE</span>
+            <h3>iBook × Jawwal Website</h3>
+            <p>
+              A website project involving responsive layouts, UI design, and
+              interactive components, focused on clear and usable interfaces.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section id="interests">
-        <h2>Interests and Career Goals</h2>
-        <p>
-          I want to grow into a Software Engineer who can take an idea from
-          understanding the problem through implementation and deployment. My
-          interests include Full Stack Web Development, mobile applications,
-          database design, and the algorithms behind efficient software.
-        </p>
-        <ul>
-          <li>Strengthen my foundations in algorithms and data structures.</li>
-          <li>Develop my skills across web, mobile, and desktop applications.</li>
-          <li>Improve my understanding of databases, servers, and deployment.</li>
-          <li>Grow AboudTech through practical projects and continuous learning.</li>
-        </ul>
+      <!-- Career Goals -->
+      <section
+        id="interests"
+        class="profile-section"
+        aria-labelledby="interests-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">LOOKING FORWARD</span>
+          <h2 id="interests-title">Interests &amp; Career Goals</h2>
+          <p>
+            My goal is to grow into a Software Engineer who can take an idea
+            from planning to deployment.
+          </p>
+        </div>
+
+        <div class="profile-goals-layout">
+          <div class="profile-goals-intro">
+            <h3>Learning, Building, Improving.</h3>
+
+            <p>
+              My interests include Full Stack Web Development, mobile
+              applications, database design, and the algorithms behind efficient
+              software.
+            </p>
+
+            <p>
+              Through continuous learning and practical projects, I want to
+              improve my ability to design, develop, and deploy reliable
+              solutions.
+            </p>
+          </div>
+
+          <ul class="profile-goals-list">
+            <li>Strengthen algorithms and data structures.</li>
+            <li>Develop web, mobile, and desktop applications.</li>
+            <li>Improve database, server, and deployment skills.</li>
+            <li>Grow AboudTech through practical projects.</li>
+          </ul>
+        </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact Information</h2>
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="contact-cta profile-contact"
+        aria-labelledby="profile-contact-title"
+      >
+        <span class="section-label">LET'S CONNECT</span>
+        <h2 id="profile-contact-title">Explore My Development Work</h2>
+
         <p>
           You can find my public developer profile on GitHub, where I use the
           username Aboudtam.
         </p>
-        <ul>
-          <li>
-            <a href="https://github.com/Aboudtam">Visit Aboudtam on GitHub</a>
-          </li>
-        </ul>
+
+        <div class="hero-actions profile-contact-actions">
+          <a
+            href="https://github.com/Aboudtam"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Visit My GitHub &nearr;
+          </a>
+
+          <a href="contact.html" class="btn btn-outline"> Contact AboudTech </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Abedalrhman Tamimi. All rights reserved.</p>
-      <nav aria-label="Footer navigation">
-        <ul>
-          <li><a href="index.html">Back to the AboudTech homepage</a></li>
-          <li><a href="#about-me">Back to About Me</a></li>
-        </ul>
-      </nav>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development &amp; Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Abedalrhman Tamimi. All rights reserved.</p>
+          <p><a href="#about-me">Back to Top ↑</a></p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

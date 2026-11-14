@@ -5,88 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn about AboudTech, a developing software development brand focused on practical applications, clear communication, and continuous learning."
+      content="Learn about AboudTech, its software development approach, and founder Abedalrhman Tamimi."
     />
     <title>About AboudTech | AboudTech</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>About AboudTech</h1>
-      <p>Software development and technology solutions.</p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html">About Me</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development &amp; Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="about.html" aria-current="page">About</a>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="application.html">Apply for Training</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>A Developing Software Brand</h2>
+    <main class="home-main about-page">
+      <!-- About Hero -->
+      <section
+        class="contact-cta about-page-hero"
+        aria-labelledby="about-page-title"
+      >
+        <span class="section-label">GET TO KNOW ABOUDTECH</span>
+
+        <h2 id="about-page-title">Building Technology With Purpose</h2>
+
         <p>
-          AboudTech is a personal software development brand founded by
-          Abedalrhman Tamimi. It is developing around a practical goal: building
-          websites and applications that help people solve everyday problems.
+          A developing software brand focused on turning everyday challenges
+          into practical digital solutions.
         </p>
-        <p>
-          The brand brings together interests in web development, mobile
-          applications, databases, and software deployment. Its focus is on
-          understanding a need before choosing how to build a solution.
-        </p>
+
+        <a href="services.html" class="btn btn-primary">
+          Explore Our Services
+          <span aria-hidden="true">&rarr;</span>
+        </a>
       </section>
 
-      <section>
-        <h2>Our Approach</h2>
-        <p>
-          Good software starts with a clear understanding of the people who will
-          use it. These principles guide the direction of AboudTech:
-        </p>
-        <ul>
-          <li>Understand the problem and define the purpose of each feature.</li>
-          <li>Use clear structure and meaningful content to support usability.</li>
-          <li>Keep code readable so that it can be reviewed and improved.</li>
-          <li>Learn from practical projects and improve the work over time.</li>
+      <!-- Who We Are -->
+      <section class="about-section" aria-labelledby="who-title">
+        <div class="section-heading">
+          <span class="section-label">WHO WE ARE</span>
+          <h2 id="who-title">The Story Behind AboudTech</h2>
+          <p>Technology begins with understanding people's needs.</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-description">
+            <h3>A Developing Software Brand</h3>
+
+            <p>
+              AboudTech is a personal software development brand founded by
+              Abedalrhman Tamimi.
+            </p>
+
+            <p>
+              It is developing around a practical goal: building websites and
+              applications that help people solve everyday problems.
+            </p>
+
+            <p>
+              The brand brings together interests in web development, mobile
+              applications, databases, and software deployment.
+            </p>
+
+            <p>
+              Its focus is on understanding a need before choosing how to build
+              a solution.
+            </p>
+          </div>
+
+          <aside class="about-highlight" aria-label="Our direction">
+            <div class="highlight-icon" aria-hidden="true">AT</div>
+
+            <h3>Our Direction</h3>
+
+            <p>Practical Software</p>
+            <p>Meaningful Design</p>
+            <p>Readable Code</p>
+            <p>Continuous Learning</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Our Principles -->
+      <section class="services-section" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <span class="section-label">OUR APPROACH</span>
+          <h2 id="approach-title">How We Approach Software Development</h2>
+
+          <p>
+            Good software starts with understanding the people who will use it.
+          </p>
+        </div>
+
+        <ul class="service-grid">
+          <li class="service-card">
+            <span class="service-number">01</span>
+
+            <span class="service-icon" aria-hidden="true"> ? </span>
+
+            <h3>Understand the Problem</h3>
+
+            <p>
+              Define the purpose of each feature and understand the problem that
+              the software should solve.
+            </p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-number">02</span>
+
+            <span class="service-icon" aria-hidden="true"> &lt;/&gt; </span>
+
+            <h3>Build With Clarity</h3>
+
+            <p>
+              Use meaningful content, clear structure, and readable code to
+              support usability and future improvements.
+            </p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-number">03</span>
+
+            <span class="service-icon" aria-hidden="true"> + </span>
+
+            <h3>Keep Improving</h3>
+
+            <p>
+              Learn from practical projects, review the work, and improve
+              software solutions over time.
+            </p>
+          </li>
         </ul>
-        <p>
-          <a href="services.html">Explore AboudTech's development services</a>
-        </p>
       </section>
 
-      <section>
-        <h2>The Founder</h2>
-        <p>
-          Abedalrhman Tamimi is a Computer Science student, aspiring Software
-          Engineer, and software and application developer. AboudTech is the
-          personal brand through which he is developing his software work.
-        </p>
-        <p>
-          <a href="profile.html">Read Abedalrhman Tamimi's personal profile</a>
-          for his education, technical interests, projects, and career goals.
-        </p>
+      <!-- Founder -->
+      <section class="blog-section" aria-labelledby="founder-title">
+        <div class="section-heading">
+          <span class="section-label">THE PERSON BEHIND THE BRAND</span>
+          <h2 id="founder-title">Meet the Founder</h2>
+        </div>
+
+        <article class="featured-article">
+          <div class="article-illustration" aria-hidden="true">
+            <span>&lt;Developer&gt;</span>
+            <span>AboudTech</span>
+            <span>&lt;/Developer&gt;</span>
+          </div>
+
+          <div class="article-content">
+            <span class="article-category"> FOUNDER &amp; DEVELOPER </span>
+
+            <h3>Abedalrhman Tamimi</h3>
+
+            <p>
+              Abedalrhman Tamimi is a Computer Science student, aspiring
+              Software Engineer, and software and application developer.
+            </p>
+
+            <p>
+              AboudTech is the personal brand through which he is developing his
+              software work.
+            </p>
+
+            <p>
+              Explore his education, technical interests, projects, and career
+              goals.
+            </p>
+
+            <a href="profile.html" class="text-link">
+              View Personal Profile &rarr;
+            </a>
+          </div>
+        </article>
       </section>
 
-      <section>
-        <h2>Explore More</h2>
+      <!-- Explore More -->
+      <section class="contact-cta" aria-labelledby="explore-title">
+        <span class="section-label">EXPLORE MORE</span>
+
+        <h2 id="explore-title">Discover More About Our Work</h2>
+
         <p>
-          Visit the technology blog for short explanations of development topics,
-          or view the contact page for public contact information and the
-          practice contact form.
+          Explore development topics on the technology blog or get in touch
+          through our contact page.
         </p>
-        <ul>
-          <li><a href="blog.html">Read the AboudTech technology blog</a></li>
-          <li><a href="contact.html">Visit the contact page</a></li>
-        </ul>
+
+        <div class="hero-actions about-page-actions">
+          <a href="blog.html" class="btn btn-primary"> Read Our Blog </a>
+
+          <a href="contact.html" class="btn btn-outline"> Contact Us </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 AboudTech. All rights reserved.</p>
-      <p><a href="index.html">Back to the AboudTech homepage</a></p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development &amp; Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 AboudTech. All rights reserved.</p>
+          <p>Designed with purpose.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

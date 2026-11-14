@@ -8,92 +8,253 @@
       content="Read AboudTech's technology notes on semantic HTML, accessible forms, and navigation between web pages."
     />
     <title>Technology Blog | AboudTech</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Technology Blog</h1>
-      <p>AboudTech notes on building clear, useful websites and applications.</p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html" aria-current="page">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html">About Me</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development &amp; Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+              <a href="blog.html" aria-current="page">Blog</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="application.html">Apply for Training</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Explore Topics</h2>
-        <p>Browse these short articles about HTML foundations.</p>
-        <ul>
-          <li><a href="#semantic-html">Giving Content Meaning with HTML</a></li>
-          <li><a href="#accessible-forms">Making Forms Easier to Complete</a></li>
-          <li><a href="#page-navigation">Connecting a Multi-Page Website</a></li>
-        </ul>
+    <main class="home-main blog-page">
+      <!-- Blog Hero -->
+      <section class="contact-cta blog-hero" aria-labelledby="blog-title">
+        <span class="section-label">ABOUDTECH JOURNAL</span>
+
+        <h2 id="blog-title">Insights, Code &amp; Technology</h2>
+
+        <p>
+          Exploring the foundations of web development through practical
+          examples, meaningful structure, and clear explanations.
+        </p>
+
+        <a href="#articles" class="btn btn-primary">
+          Explore Articles
+          <span aria-hidden="true">&darr;</span>
+        </a>
       </section>
 
-      <section>
-        <h2>Technology Notes</h2>
+      <!-- Explore Topics -->
+      <section class="blog-topics" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <span class="section-label">EXPLORE THE BLOG</span>
+          <h2 id="topics-title">Choose a Topic</h2>
+          <p>
+            Three practical articles covering essential HTML concepts and
+            website development.
+          </p>
+        </div>
 
-        <article id="semantic-html">
-          <h3>Giving Content Meaning with HTML</h3>
+        <nav class="blog-topic-nav" aria-label="Blog topics">
+          <a href="#semantic-html" class="blog-topic-link">
+            <span class="topic-number">01</span>
+            <span>Semantic HTML</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+
+          <a href="#accessible-forms" class="blog-topic-link">
+            <span class="topic-number">02</span>
+            <span>Accessible Forms</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+
+          <a href="#page-navigation" class="blog-topic-link">
+            <span class="topic-number">03</span>
+            <span>Page Navigation</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </nav>
+      </section>
+
+      <!-- Articles -->
+      <section
+        id="articles"
+        class="blog-articles"
+        aria-labelledby="articles-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">TECHNOLOGY NOTES</span>
+          <h2 id="articles-title">Latest Articles</h2>
           <p>
-            Semantic HTML identifies the purpose of each part of a page. A
-            navigation element contains navigation links, the main element holds
-            the primary content, and an article contains a piece that can make
-            sense on its own.
+            Learn the concepts that help build clear, useful, and accessible
+            websites.
           </p>
-          <p>
-            Clear headings help readers follow the page and help people using
-            assistive technologies find the information they need. Choosing
-            meaningful elements also makes the source easier to understand.
-          </p>
-          <p>
-            <a href="profile.html">See the sections and project articles on the About Me page</a>
-          </p>
+        </div>
+
+        <!-- Article 1 -->
+        <article id="semantic-html" class="blog-article-card">
+          <div class="blog-article-visual" aria-hidden="true">
+            <span class="blog-code-tag">&lt;HTML&gt;</span>
+            <span class="blog-code-large">&lt;article&gt;</span>
+            <span class="blog-code-tag">&lt;/HTML&gt;</span>
+          </div>
+
+          <div class="blog-article-content">
+            <span class="article-category">HTML FOUNDATIONS</span>
+
+            <h3>Giving Content Meaning with HTML</h3>
+
+            <p>
+              Semantic HTML identifies the purpose of each part of a page. A
+              navigation element contains navigation links, the main element
+              holds the primary content, and an article contains a piece that
+              can make sense on its own.
+            </p>
+
+            <p>
+              Clear headings help readers follow the page and help people using
+              assistive technologies find the information they need. Choosing
+              meaningful elements also makes the source easier to understand.
+            </p>
+
+            <a href="profile.html" class="blog-read-link">
+              Explore the About Me Page &rarr;
+            </a>
+          </div>
         </article>
 
-        <article id="accessible-forms">
-          <h3>Making Forms Easier to Complete</h3>
-          <p>
-            Every form control needs a clear label. Connecting a label to an
-            input helps people understand what to enter, while a fieldset and
-            legend can explain a related group of choices.
-          </p>
-          <p>
-            Input types such as email and telephone describe the expected
-            information. Required fields and length limits provide native
-            browser validation. Clear instructions should also explain what
-            happens when the form is submitted.
-          </p>
-          <p><a href="contact.html">Explore the HTML contact form</a></p>
+        <!-- Article 2 -->
+        <article id="accessible-forms" class="blog-article-card">
+          <div class="blog-article-visual" aria-hidden="true">
+            <span class="blog-code-tag">&lt;FORM&gt;</span>
+            <span class="blog-code-large">&lt;input /&gt;</span>
+            <span class="blog-code-tag">&lt;/FORM&gt;</span>
+          </div>
+
+          <div class="blog-article-content">
+            <span class="article-category">WEB ACCESSIBILITY</span>
+
+            <h3>Making Forms Easier to Complete</h3>
+
+            <p>
+              Every form control needs a clear label. Connecting a label to an
+              input helps people understand what to enter, while a fieldset and
+              legend can explain a related group of choices.
+            </p>
+
+            <p>
+              Input types such as email and telephone describe the expected
+              information. Required fields and length limits provide native
+              browser validation. Clear instructions should also explain what
+              happens when the form is submitted.
+            </p>
+
+            <a href="contact.html" class="blog-read-link">
+              Explore the Contact Form &rarr;
+            </a>
+          </div>
         </article>
 
-        <article id="page-navigation">
-          <h3>Connecting a Multi-Page Website</h3>
-          <p>
-            Consistent navigation helps visitors move between pages without
-            learning a different menu each time. Keeping the same link labels
-            and order makes a small website easier to explore.
-          </p>
-          <p>
-            Relative links connect files within the same project. For example,
-            a link to <code>index.html</code> opens the homepage. Each destination
-            should have a descriptive title and a clear main heading so visitors
-            can understand where they have arrived.
-          </p>
-          <p><a href="index.html">Return to the AboudTech homepage</a></p>
+        <!-- Article 3 -->
+        <article id="page-navigation" class="blog-article-card">
+          <div class="blog-article-visual" aria-hidden="true">
+            <span class="blog-code-tag">&lt;NAV&gt;</span>
+            <span class="blog-code-large">&lt;a href=""&gt;</span>
+            <span class="blog-code-tag">&lt;/NAV&gt;</span>
+          </div>
+
+          <div class="blog-article-content">
+            <span class="article-category">WEBSITE STRUCTURE</span>
+
+            <h3>Connecting a Multi-Page Website</h3>
+
+            <p>
+              Consistent navigation helps visitors move between pages without
+              learning a different menu each time. Keeping the same link labels
+              and order makes a small website easier to explore.
+            </p>
+
+            <p>
+              Relative links connect files within the same project. For example,
+              a link to <code>index.html</code>
+              opens the homepage. Each destination should have a descriptive
+              title and a clear main heading so visitors can understand where
+              they have arrived.
+            </p>
+
+            <a href="index.html" class="blog-read-link">
+              Return to Homepage &rarr;
+            </a>
+          </div>
         </article>
+      </section>
+
+      <!-- Blog CTA -->
+      <section class="contact-cta blog-cta" aria-labelledby="blog-cta-title">
+        <span class="section-label">KEEP EXPLORING</span>
+
+        <h2 id="blog-cta-title">Turn Knowledge Into Practice</h2>
+
+        <p>
+          Explore AboudTech's development services or discover more about the
+          person behind the brand.
+        </p>
+
+        <div class="hero-actions blog-cta-actions">
+          <a href="services.html" class="btn btn-primary">
+            Our Services &rarr;
+          </a>
+
+          <a href="profile.html" class="btn btn-outline">
+            About the Developer
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 AboudTech. All rights reserved.</p>
-      <p><a href="index.html">Back to the homepage</a></p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development &amp; Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 AboudTech. All rights reserved.</p>
+          <p>Designed with purpose.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

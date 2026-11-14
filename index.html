@@ -5,105 +5,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore AboudTech's software development services, including websites, web applications, and ongoing software support."
+      content="AboudTech builds modern websites, web applications, and practical software solutions."
     />
-    <title>AboudTech | Home</title>
+    <title>AboudTech | Software Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>AboudTech</h1>
-      <p>Software development and technology solutions.</p>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="profile.html">About Me</a></li>
-        </ul>
-      </nav>
+    <!-- Website Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <a href="index.html" class="site-logo" aria-label="AboudTech Home">
+            <img
+              src="assets/images/aboudtech-logo.png"
+              alt="AboudTech logo"
+              width="110"
+            />
+          </a>
+          <div class="brand-info">
+            <h1>AboudTech</h1>
+            <p>Software Development & Technology Solutions</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="application.html">Apply for Training</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>Practical Software for Your Business</h2>
-        <p>
-          Welcome to AboudTech. We help businesses turn ideas into useful
-          websites and software applications, with a focus on clear
-          communication and dependable solutions.
-        </p>
-        <p><a href="#services">Explore our software development services</a></p>
+    <main class="home-main">
+      <!-- Premium Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <span class="eyebrow">WELCOME TO ABOUDTECH</span>
+
+          <h2 id="hero-title">
+            Your Ideas.
+            <span>Your Vision.</span>
+            Our Technology.
+          </h2>
+
+          <p>
+            We transform creative ideas into modern websites, powerful web
+            applications, and dependable software solutions for real business
+            needs.
+          </p>
+
+          <div class="hero-actions">
+            <a href="services.html" class="btn btn-primary">
+              Explore Our Services
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="profile.html" class="btn btn-outline">
+              Meet the Developer
+            </a>
+          </div>
+
+          <div class="hero-tags" aria-label="Our focus areas">
+            <span>Web Development</span>
+            <span>Custom Applications</span>
+            <span>Software Solutions</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="hero-logo-card">
+            <img src="assets/images/aboudtech-logo.png" alt="" />
+          </div>
+
+          <div class="floating-card floating-one">
+            <span class="floating-symbol">&lt;/&gt;</span>
+            <strong>Clean Code</strong>
+            <small>Modern Development</small>
+          </div>
+
+          <div class="floating-card floating-two">
+            <span class="floating-symbol">{ }</span>
+            <strong>Creative Solutions</strong>
+            <small>Built for Your Business</small>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>About AboudTech</h2>
-        <p>
-          AboudTech is a software development and technology company. Our
-          approach starts with understanding your goals, then planning software
-          that helps people complete everyday tasks more easily.
-        </p>
-        <p><a href="about.html">Learn more about AboudTech</a></p>
+      <!-- About Section -->
+      <section class="about-section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <span class="section-label">WHO WE ARE</span>
+          <h2 id="about-title">Technology Built Around Your Ideas</h2>
+          <p>
+            AboudTech is a developing software and technology brand focused on
+            practical, reliable, and carefully designed solutions.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-description">
+            <h3>We Turn Challenges Into Opportunities</h3>
+            <p>
+              Every great software product starts with understanding a real
+              problem. At AboudTech, we focus on creating useful digital
+              experiences with clear structure and thoughtful design.
+            </p>
+            <p>
+              From responsive websites to custom business applications, our goal
+              is to develop technology that makes everyday work simpler and more
+              efficient.
+            </p>
+            <a href="about.html" class="text-link">
+              More About AboudTech &rarr;
+            </a>
+          </div>
+
+          <div class="about-highlight">
+            <div class="highlight-icon" aria-hidden="true">AT</div>
+            <h3>Our Approach</h3>
+            <p>Understand the problem.</p>
+            <p>Design the solution.</p>
+            <p>Build with purpose.</p>
+          </div>
+        </div>
       </section>
 
-      <section id="services">
-        <h2>Our Software Development Services</h2>
-        <ul>
-          <li>
+      <!-- Services -->
+      <section
+        id="services"
+        class="services-section"
+        aria-labelledby="services-title"
+      >
+        <div class="section-heading">
+          <span class="section-label">WHAT WE DO</span>
+          <h2 id="services-title">Our Software Development Services</h2>
+          <p>
+            Practical technology solutions designed to support businesses and
+            improve digital experiences.
+          </p>
+        </div>
+
+        <ul class="service-grid">
+          <li class="service-card">
+            <span class="service-number">01</span>
+            <span class="service-icon" aria-hidden="true">&lt;/&gt;</span>
             <h3>Website Development</h3>
             <p>
-              Build clear, accessible websites that introduce your business and
-              help customers find the information they need.
+              Responsive, accessible, and modern websites that help businesses
+              connect with their customers.
             </p>
+            <a href="services.html">Explore Service &rarr;</a>
           </li>
-          <li>
+
+          <li class="service-card">
+            <span class="service-number">02</span>
+            <span class="service-icon" aria-hidden="true">{ }</span>
             <h3>Custom Web Applications</h3>
             <p>
-              Create applications for business needs such as managing bookings,
-              organizing records, and tracking daily work.
+              Custom digital tools for managing information, organizing
+              workflows, and improving productivity.
             </p>
+            <a href="services.html">Explore Service &rarr;</a>
           </li>
-          <li>
-            <h3>Software Maintenance and Support</h3>
+
+          <li class="service-card">
+            <span class="service-number">03</span>
+            <span class="service-icon" aria-hidden="true">&#9881;</span>
+            <h3>Software Support</h3>
             <p>
-              Fix problems, improve existing features, and keep software useful
-              as your business grows.
+              Improving existing software, resolving problems, and helping
+              applications remain dependable.
             </p>
+            <a href="services.html">Explore Service &rarr;</a>
           </li>
         </ul>
-        <p><a href="services.html">Read more about our services</a></p>
       </section>
 
-      <section>
-        <h2>From Our Technology Blog</h2>
-        <article>
-          <h3>Why Good Websites Start with Semantic HTML</h3>
-          <p>
-            HTML gives a web page its structure. Meaningful elements identify
-            navigation, main content, and articles so that the purpose of each
-            part is easier to understand.
-          </p>
-          <p>
-            A clear heading order helps readers find information. Semantic HTML
-            also helps assistive technologies navigate the page and gives
-            developers a readable foundation for future work.
-          </p>
+      <!-- Technology Blog -->
+      <section class="blog-section" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <span class="section-label">TECH INSIGHTS</span>
+          <h2 id="blog-title">From Our Technology Blog</h2>
+        </div>
+
+        <article class="featured-article">
+          <div class="article-illustration" aria-hidden="true">
+            <span>&lt;HTML5&gt;</span>
+            <span>{ CSS3 }</span>
+            <span>&lt;/CODE&gt;</span>
+          </div>
+
+          <div class="article-content">
+            <span class="article-category">WEB DEVELOPMENT</span>
+            <h3>Why Good Websites Start With Semantic HTML</h3>
+            <p>
+              Meaningful HTML creates a clear foundation for modern websites.
+              Semantic elements improve page structure, readability, and
+              accessibility.
+            </p>
+            <p>
+              Combined with logical headings and thoughtful navigation, semantic
+              HTML makes websites easier to maintain and understand.
+            </p>
+            <a href="blog.html" class="text-link"> Explore Our Blog &rarr; </a>
+          </div>
         </article>
-        <p><a href="blog.html">Explore the technology blog</a></p>
       </section>
 
-      <section>
-        <h2>Let Us Discuss Your Project</h2>
+      <!-- Contact CTA -->
+      <section class="contact-cta" aria-labelledby="contact-title">
+        <span class="section-label">LET'S BUILD SOMETHING</span>
+        <h2 id="contact-title">Have a Great Idea?</h2>
         <p>
-          Have an idea for a website or application? Tell us what you want to
-          build and which problems you would like to solve.
+          Let's discuss your next website or software project and explore how
+          technology can bring your ideas to life.
         </p>
-        <p><a href="contact.html">Contact the AboudTech team</a></p>
+        <a href="contact.html" class="btn btn-primary">
+          Contact AboudTech &rarr;
+        </a>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 AboudTech. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>AboudTech</h2>
+          <p>Software Development & Technology Solutions</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="profile.html">Profile</a>
+          <a href="application.html">Apply for Training</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 AboudTech. All rights reserved.</p>
+          <p>Designed with purpose.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
