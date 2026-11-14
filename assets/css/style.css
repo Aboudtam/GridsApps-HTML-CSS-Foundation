@@ -19,7 +19,6 @@
   --shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
   --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.36);
 }
-
 /* Base */
 *,
 *::before,
@@ -73,7 +72,6 @@ h4 {
   line-height: 1.2;
   letter-spacing: -0.4px;
 }
-
 /* Header: muted deep blue, rather than a bright strip */
 body > header {
   padding: 0;
@@ -145,7 +143,6 @@ body > header nav a[aria-current="page"] {
   background: rgba(255, 255, 255, 0.2);
   color: var(--white);
 }
-
 /* Main and section headings */
 main {
   width: min(92%, 1200px);
@@ -179,7 +176,6 @@ main > section {
   color: var(--muted);
   font-size: 1.1rem;
 }
-
 /* Hero banner, grid, buttons and visual */
 .hero {
   position: relative;
@@ -397,7 +393,6 @@ main a.btn-outline:hover {
 .hero-visual {
   animation: visual-enter 1.1s ease-out both;
 }
-
 /* About and services */
 .about-section,
 .blog-section {
@@ -522,7 +517,6 @@ main a.btn-outline:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
 /* Blog, CTA, footer */
 .featured-article {
   display: grid;
@@ -621,7 +615,6 @@ body > footer a:hover {
 .footer-bottom p {
   margin: 0;
 }
-
 /* All existing secondary pages, including forms */
 main:not(.home-main) > section {
   padding: clamp(25px, 4vw, 45px);
@@ -704,7 +697,6 @@ form button:hover,
 form input[type="submit"]:hover {
   background: #318be2;
 }
-
 /* Responsive widths */
 @media (min-width: 1440px) {
   .header-container,
@@ -841,7 +833,6 @@ form input[type="submit"]:hover {
     padding: 45px 20px;
   }
 }
-
 /* Motion */
 @keyframes logo-float {
   0%,
@@ -916,11 +907,9 @@ form input[type="submit"]:hover {
     transition-duration: 0.01ms !important;
   }
 }
-
 /* ==================================
    About Page
    ================================== */
-
 .about-page-hero {
   position: relative;
   overflow: hidden;
@@ -932,43 +921,34 @@ form input[type="submit"]:hover {
     ),
     linear-gradient(125deg, #101e33, #1b344f);
 }
-
 .about-page-hero h2 {
   max-width: 820px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .about-page-actions {
   justify-content: center;
 }
-
 .about-page .service-card {
   height: 100%;
 }
-
 .about-page .article-illustration {
   background: linear-gradient(135deg, #13263e, #25466a);
 }
-
 .about-page .article-illustration span {
   overflow-wrap: anywhere;
 }
-
 @media (max-width: 600px) {
   .about-page-hero {
     padding: 45px 22px;
   }
-
   .about-page-actions .btn {
     width: 100%;
   }
 }
-
 /* ======================================
    SERVICES PAGE — MIDNIGHT BLUE
    ====================================== */
-
 /* Hero */
 .services-hero {
   position: relative;
@@ -981,29 +961,24 @@ form input[type="submit"]:hover {
     ),
     linear-gradient(125deg, #101e33, #1b344f);
 }
-
 .services-hero h2 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .services-hero h2 span {
   display: block;
   color: #83c8ee;
 }
-
 /* Service features */
 .services-page .service-card {
   min-width: 0;
 }
-
 .service-card h4 {
   margin: 25px 0 15px;
   font-size: 1.15rem;
   color: #e4edf7;
 }
-
 .service-features {
   display: flex;
   flex-direction: column;
@@ -1012,15 +987,12 @@ form input[type="submit"]:hover {
   margin: 0;
   color: #a9bdd1;
 }
-
 .service-features li {
   padding-left: 5px;
 }
-
 .service-features li::marker {
   color: #73b5f2;
 }
-
 /* Comparison table */
 .comparison-table-wrapper {
   width: 100%;
@@ -1030,14 +1002,12 @@ form input[type="submit"]:hover {
   background: #14253d;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
 }
-
 .comparison-table {
   width: 100%;
   min-width: 650px;
   border-collapse: collapse;
   color: #e4edf7;
 }
-
 .comparison-table caption {
   padding: 18px 20px;
   color: #a9bdd1;
@@ -1045,11 +1015,9 @@ form input[type="submit"]:hover {
   text-align: left;
   caption-side: top;
 }
-
 .comparison-table thead {
   background: #214466;
 }
-
 .comparison-table th,
 .comparison-table td {
   padding: 22px 24px;
@@ -1057,41 +1025,33 @@ form input[type="submit"]:hover {
   vertical-align: top;
   border-bottom: 1px solid #2c455f;
 }
-
 .comparison-table thead th {
   color: #eaf4ff;
   font-weight: bold;
 }
-
 .comparison-table tbody th {
   color: #98d4ff;
   font-weight: bold;
 }
-
 .comparison-table tbody td {
   color: #b8cbe0;
 }
-
 .comparison-table tbody tr {
   transition: background-color 0.25s ease;
 }
-
 .comparison-table tbody tr:hover {
   background: #1d3b59;
 }
-
 .comparison-table tbody tr:last-child th,
 .comparison-table tbody tr:last-child td {
   border-bottom: 0;
 }
-
 /* Process section */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
-
 .process-card {
   position: relative;
   padding: 32px;
@@ -1104,13 +1064,11 @@ form input[type="submit"]:hover {
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
-
 .process-card:hover {
   transform: translateY(-7px);
   border-color: #639fce;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
 }
-
 .process-step {
   display: inline-flex;
   align-items: center;
@@ -1124,70 +1082,57 @@ form input[type="submit"]:hover {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 .process-card h3 {
   margin: 0 0 14px;
   color: #e4edf7;
   font-size: 1.45rem;
 }
-
 .process-card p {
   margin-bottom: 0;
   color: #a9bdd1;
 }
-
 /* Contact CTA */
 .services-cta {
   background: linear-gradient(125deg, #102139, #1b4167);
 }
-
 .services-cta-actions {
   justify-content: center;
 }
-
 /* Tablet */
 @media (max-width: 950px) {
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 /* Mobile */
 @media (max-width: 600px) {
   .services-hero,
   .services-cta {
     padding: 45px 22px;
   }
-
   .process-grid {
     grid-template-columns: 1fr;
   }
-
   .process-card {
     padding: 25px;
   }
-
   .services-cta-actions .btn {
     width: 100%;
   }
-
   .comparison-table th,
   .comparison-table td {
     padding: 15px;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .process-card,
   .comparison-table tbody tr {
     transition: none;
   }
 }
-
 /* ======================================
    BLOG PAGE — ABOUDTECH MIDNIGHT BLUE
    ====================================== */
-
 /* Hero */
 .blog-hero {
   position: relative;
@@ -1200,20 +1145,17 @@ form input[type="submit"]:hover {
     ),
     linear-gradient(125deg, #101e33, #1b344f);
 }
-
 .blog-hero h2 {
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
-
 /* Topic navigation */
 .blog-topic-nav {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
-
 .blog-topic-link {
   display: flex;
   align-items: center;
@@ -1230,7 +1172,6 @@ form input[type="submit"]:hover {
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
-
 .blog-topic-link:hover,
 .blog-topic-link:focus-visible {
   color: #ffffff;
@@ -1238,18 +1179,15 @@ form input[type="submit"]:hover {
   border-color: #6eabda;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
-
 .topic-number {
   color: #83c8ee;
   font-weight: bold;
   font-size: 1.3rem;
 }
-
 .blog-topic-link span:last-child {
   margin-left: auto;
   color: #83c8ee;
 }
-
 /* Article cards */
 .blog-article-card {
   display: grid;
@@ -1266,13 +1204,11 @@ form input[type="submit"]:hover {
     box-shadow 0.3s ease;
   scroll-margin-top: 25px;
 }
-
 .blog-article-card:hover {
   transform: translateY(-5px);
   border-color: #4e86b5;
   box-shadow: 0 22px 48px rgba(0, 0, 0, 0.33);
 }
-
 .blog-article-visual {
   display: flex;
   flex-direction: column;
@@ -1290,47 +1226,39 @@ form input[type="submit"]:hover {
   border-right: 1px solid #355470;
   text-align: center;
 }
-
 .blog-code-tag,
 .blog-code-large {
   font-family: monospace;
   overflow-wrap: anywhere;
 }
-
 .blog-code-tag {
   font-size: 1.1rem;
   color: #89c6f0;
 }
-
 .blog-code-large {
   font-size: clamp(1.4rem, 2.5vw, 2.2rem);
   font-weight: bold;
   color: #e4edf7;
   text-shadow: 0 0 28px rgba(111, 197, 255, 0.22);
 }
-
 .blog-article-content {
   padding: clamp(28px, 4vw, 45px);
 }
-
 .blog-article-content h3 {
   margin: 15px 0 20px;
   font-size: clamp(1.7rem, 3vw, 2.2rem);
   color: #e4edf7;
 }
-
 .blog-article-content p {
   color: #a9bdd1;
   line-height: 1.8;
 }
-
 .blog-article-content code {
   padding: 3px 7px;
   border-radius: 6px;
   background: #234466;
   color: #98d4ff;
 }
-
 .blog-read-link {
   display: inline-block;
   margin-top: 15px;
@@ -1338,64 +1266,52 @@ form input[type="submit"]:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
 .blog-read-link:hover {
   color: #ffffff;
 }
-
 /* CTA */
 .blog-cta {
   background: linear-gradient(125deg, #102139, #1b4167);
 }
-
 .blog-cta-actions {
   justify-content: center;
 }
-
 /* Tablet */
 @media (max-width: 950px) {
   .blog-topic-nav {
     grid-template-columns: 1fr;
   }
-
   .blog-article-card {
     grid-template-columns: 1fr;
   }
-
   .blog-article-visual {
     min-height: 210px;
     border-right: 0;
     border-bottom: 1px solid #355470;
   }
 }
-
 /* Mobile */
 @media (max-width: 600px) {
   .blog-hero,
   .blog-cta {
     padding: 45px 22px;
   }
-
   .blog-article-content {
     padding: 25px;
   }
-
   .blog-cta-actions .btn {
     width: 100%;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .blog-topic-link,
   .blog-article-card {
     transition: none;
   }
 }
-
 /* ======================================
    CONTACT PAGE — MIDNIGHT BLUE
    ====================================== */
-
 .contact-page-hero {
   background:
     radial-gradient(
@@ -1405,12 +1321,10 @@ form input[type="submit"]:hover {
     ),
     linear-gradient(125deg, #101e33, #1b344f);
 }
-
 .contact-page-hero h2 {
   max-width: 850px;
   margin-inline: auto;
 }
-
 /* Main contact layout */
 .contact-layout {
   display: grid;
@@ -1418,12 +1332,10 @@ form input[type="submit"]:hover {
   gap: 28px;
   align-items: start;
 }
-
 .contact-sidebar {
   display: grid;
   gap: 20px;
 }
-
 .contact-info-card {
   padding: 28px;
   border: 1px solid #355470;
@@ -1434,12 +1346,10 @@ form input[type="submit"]:hover {
     transform 0.3s ease,
     border-color 0.3s ease;
 }
-
 .contact-info-card:hover {
   transform: translateY(-5px);
   border-color: #619bc9;
 }
-
 .contact-card-icon {
   display: grid;
   place-items: center;
@@ -1453,29 +1363,24 @@ form input[type="submit"]:hover {
   font-weight: bold;
   font-size: 1.3rem;
 }
-
 .contact-info-card h3 {
   color: #e4edf7;
   margin: 0 0 12px;
   font-size: 1.5rem;
 }
-
 .contact-info-card p {
   color: #a9bdd1;
   margin: 0 0 15px;
 }
-
 .contact-info-link {
   color: #91cfff;
   font-weight: bold;
   text-decoration: none;
   overflow-wrap: anywhere;
 }
-
 .contact-info-link:hover {
   color: #ffffff;
 }
-
 /* Form panel */
 .contact-form-panel {
   min-width: 0;
@@ -1486,17 +1391,14 @@ form input[type="submit"]:hover {
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
   scroll-margin-top: 24px;
 }
-
 .contact-form-heading h3 {
   margin: 12px 0 15px;
   color: #e4edf7;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
-
 .contact-form-heading p {
   color: #a9bdd1;
 }
-
 .contact-form-notice {
   margin: 22px 0;
   padding: 18px 20px;
@@ -1505,22 +1407,18 @@ form input[type="submit"]:hover {
   border-radius: 12px;
   background: #1b344f;
 }
-
 .contact-form-notice strong {
   color: #a5d9ff;
 }
-
 .contact-form-notice p {
   margin: 8px 0 0;
   color: #c7d9e9;
   font-size: 0.95rem;
 }
-
 .required-note {
   color: #b6cadb;
   font-size: 0.95rem;
 }
-
 /* Form groups */
 .contact-page .contact-fieldset {
   margin: 25px 0;
@@ -1529,34 +1427,28 @@ form input[type="submit"]:hover {
   border-radius: 16px;
   min-width: 0;
 }
-
 .contact-page .contact-fieldset legend {
   padding: 0 10px;
   color: #e4edf7;
   font-size: 1.2rem;
 }
-
 .contact-page .form-field {
   margin-bottom: 22px;
 }
-
 .contact-page .form-field:last-child {
   margin-bottom: 0;
 }
-
 .contact-page .form-field label {
   display: block;
   margin: 0 0 8px;
   color: #e4edf7;
   font-weight: bold;
 }
-
 .contact-page .form-field label span {
   color: #a9bdd1;
   font-size: 0.85rem;
   font-weight: normal;
 }
-
 /* Inputs */
 .contact-page form input:not([type="radio"]):not([type="checkbox"]),
 .contact-page form textarea {
@@ -1572,30 +1464,25 @@ form input[type="submit"]:hover {
     border-color 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 .contact-page form input::placeholder,
 .contact-page form textarea::placeholder {
   color: #91a8c0;
 }
-
 .contact-page form input:focus-visible,
 .contact-page form textarea:focus-visible {
   outline: none;
   border-color: #82c9f6;
   box-shadow: 0 0 0 3px rgba(80, 170, 240, 0.18);
 }
-
 .contact-page form textarea {
   min-height: 150px;
   resize: vertical;
 }
-
 .contact-page .form-field small {
   display: block;
   margin-top: 8px;
   color: #a9bdd1;
 }
-
 /* Radio and checkbox */
 .contact-choice,
 .contact-agreement {
@@ -1603,11 +1490,9 @@ form input[type="submit"]:hover {
   align-items: flex-start;
   gap: 12px;
 }
-
 .contact-choice {
   margin: 12px 0;
 }
-
 .contact-agreement {
   padding: 18px;
   margin: 20px 0 26px;
@@ -1615,7 +1500,6 @@ form input[type="submit"]:hover {
   border-radius: 12px;
   background: #1b344f;
 }
-
 .contact-page form input[type="radio"],
 .contact-page form input[type="checkbox"] {
   flex: 0 0 auto;
@@ -1624,14 +1508,12 @@ form input[type="submit"]:hover {
   margin: 5px 0 0;
   accent-color: #318be2;
 }
-
 .contact-choice label,
 .contact-agreement label {
   margin: 0;
   color: #d4e3f0;
   cursor: pointer;
 }
-
 /* Submit button */
 .contact-page .contact-submit-btn {
   display: inline-flex;
@@ -1652,50 +1534,40 @@ form input[type="submit"]:hover {
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 .contact-page .contact-submit-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 17px 32px rgba(22, 113, 217, 0.36);
 }
-
 .contact-cta-actions {
   justify-content: center;
 }
-
 .contact-bottom-cta {
   background: linear-gradient(125deg, #102139, #1b4167);
 }
-
 /* Responsive */
 @media (max-width: 950px) {
   .contact-layout {
     grid-template-columns: 1fr;
   }
-
   .contact-sidebar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 @media (max-width: 600px) {
   .contact-sidebar {
     grid-template-columns: 1fr;
   }
-
   .contact-page-hero,
   .contact-bottom-cta {
     padding: 45px 22px;
   }
-
   .contact-page .contact-fieldset {
     padding: 16px;
   }
-
   .contact-cta-actions .btn {
     width: 100%;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .contact-info-card,
   .contact-page form input,
@@ -1704,11 +1576,9 @@ form input[type="submit"]:hover {
     transition: none;
   }
 }
-
 /* =========================================
    PROFILE PAGE — ABOUDTECH MIDNIGHT BLUE
    ========================================= */
-
 .profile-page {
   --profile-bg: #14253d;
   --profile-raised: #1b344f;
@@ -1717,7 +1587,6 @@ form input[type="submit"]:hover {
   --profile-muted: #a9bdd1;
   --profile-accent: #83c8ee;
 }
-
 /* Personal Hero */
 .profile-hero {
   display: grid;
@@ -1737,33 +1606,27 @@ form input[type="submit"]:hover {
     linear-gradient(125deg, #101e33, #1b344f);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
-
 .profile-hero-content h2 {
   margin: 18px 0 24px;
   font-size: clamp(2.6rem, 4.8vw, 4.8rem);
   color: var(--profile-text);
 }
-
 .profile-hero-content h2 span {
   display: block;
   color: var(--profile-accent);
 }
-
 .profile-hero-content p {
   color: var(--profile-muted);
   font-size: 1.08rem;
 }
-
 .profile-hero-content .profile-role {
   font-size: 1.12rem;
   font-weight: bold;
   color: #c2ddf5;
 }
-
 .profile-hero-content .profile-intro {
   color: var(--profile-text);
 }
-
 /* Profile Visual */
 .profile-visual {
   display: flex;
@@ -1775,7 +1638,6 @@ form input[type="submit"]:hover {
   margin: 0;
   text-align: center;
 }
-
 .profile-avatar {
   display: grid;
   place-items: center;
@@ -1789,7 +1651,6 @@ form input[type="submit"]:hover {
     0 0 55px rgba(62, 142, 210, 0.18);
   animation: profile-avatar-float 6s ease-in-out infinite;
 }
-
 .profile-avatar span {
   font-size: clamp(4rem, 8vw, 7rem);
   font-weight: bold;
@@ -1797,28 +1658,23 @@ form input[type="submit"]:hover {
   color: #a6ddff;
   text-shadow: 0 0 25px rgba(116, 191, 242, 0.25);
 }
-
 .profile-visual-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-
 .profile-visual-label strong {
   color: var(--profile-text);
   font-size: 1.5rem;
 }
-
 .profile-visual-label span,
 .profile-visual figcaption {
   color: var(--profile-muted);
   font-size: 0.9rem;
 }
-
 .profile-visual figcaption {
   max-width: 260px;
 }
-
 /* Section Navigation */
 .profile-section-nav {
   display: flex;
@@ -1834,7 +1690,6 @@ form input[type="submit"]:hover {
   background: #14253d;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
-
 .profile-section-nav a {
   padding: 9px 15px;
   border-radius: 10px;
@@ -1842,17 +1697,14 @@ form input[type="submit"]:hover {
   text-decoration: none;
   font-weight: bold;
 }
-
 .profile-section-nav a:hover,
 .profile-section-nav a:focus-visible {
   background: #244b73;
   color: white;
 }
-
 .profile-page section[id] {
   scroll-margin-top: 25px;
 }
-
 /* Reusable profile cards */
 .profile-info-card,
 .profile-skill-group,
@@ -1863,7 +1715,6 @@ form input[type="submit"]:hover {
   background: linear-gradient(145deg, #1a344f, #13263e);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
-
 .profile-info-card,
 .profile-skill-group,
 .profile-project-card {
@@ -1872,7 +1723,6 @@ form input[type="submit"]:hover {
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
-
 .profile-info-card:hover,
 .profile-skill-group:hover,
 .profile-project-card:hover {
@@ -1880,21 +1730,17 @@ form input[type="submit"]:hover {
   border-color: #609ac8;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
 }
-
 .profile-page .profile-section {
   margin-bottom: 80px;
 }
-
 .profile-two-column {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
-
 .profile-info-card {
   padding: 35px;
 }
-
 .profile-card-symbol,
 .profile-skill-icon {
   display: grid;
@@ -1909,7 +1755,6 @@ form input[type="submit"]:hover {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .profile-info-card h3,
 .profile-skill-group h3,
 .profile-project-card h3,
@@ -1917,29 +1762,24 @@ form input[type="submit"]:hover {
   color: var(--profile-text);
   font-size: 1.55rem;
 }
-
 .profile-info-card p,
 .profile-project-card p,
 .profile-goals-intro p {
   color: var(--profile-muted);
 }
-
 /* Skills */
 .profile-skills-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
-
 .profile-skill-group {
   min-width: 0;
   padding: 28px;
 }
-
 .profile-skill-group h3 {
   font-size: 1.35rem;
 }
-
 .profile-skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -1948,7 +1788,6 @@ form input[type="submit"]:hover {
   padding: 0;
   list-style: none;
 }
-
 .profile-skill-list li {
   padding: 7px 11px;
   border: 1px solid #365b7d;
@@ -1957,14 +1796,12 @@ form input[type="submit"]:hover {
   color: #c7deef;
   font-size: 0.9rem;
 }
-
 /* Projects */
 .profile-project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
-
 .profile-project-card {
   position: relative;
   display: flex;
@@ -1972,7 +1809,6 @@ form input[type="submit"]:hover {
   min-width: 0;
   padding: 35px 28px;
 }
-
 .profile-project-number {
   position: absolute;
   top: 18px;
@@ -1981,7 +1817,6 @@ form input[type="submit"]:hover {
   font-size: 1.8rem;
   font-weight: bold;
 }
-
 .profile-project-category {
   display: inline-block;
   margin: 30px 0 10px;
@@ -1991,15 +1826,12 @@ form input[type="submit"]:hover {
   font-weight: bold;
   letter-spacing: 1.5px;
 }
-
 .profile-project-card h3 {
   margin: 10px 0 15px;
 }
-
 .profile-project-card p {
   flex: 1;
 }
-
 .profile-project-link {
   display: inline-block;
   margin-top: 15px;
@@ -2007,26 +1839,21 @@ form input[type="submit"]:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
 .profile-project-link:hover {
   color: white;
 }
-
 /* Career Goals */
 .profile-goals-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
-
 .profile-goals-intro {
   padding: 35px;
 }
-
 .profile-goals-intro h3 {
   margin-top: 0;
 }
-
 .profile-goals-list {
   display: flex;
   flex-direction: column;
@@ -2039,24 +1866,19 @@ form input[type="submit"]:hover {
   background: #14253d;
   color: var(--profile-text);
 }
-
 .profile-goals-list li {
   padding-left: 8px;
 }
-
 .profile-goals-list li::marker {
   color: var(--profile-accent);
 }
-
 /* Contact CTA */
 .profile-contact {
   background: linear-gradient(125deg, #102139, #1b4167);
 }
-
 .profile-contact-actions {
   justify-content: center;
 }
-
 /* Animation */
 @keyframes profile-avatar-float {
   0%,
@@ -2067,91 +1889,74 @@ form input[type="submit"]:hover {
     transform: translateY(-12px);
   }
 }
-
 /* Tablet */
 @media (max-width: 1100px) {
   .profile-skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
   .profile-project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 @media (max-width: 850px) {
   .profile-hero {
     grid-template-columns: 1fr;
   }
-
   .profile-two-column,
   .profile-goals-layout {
     grid-template-columns: 1fr;
   }
-
   .profile-section-nav {
     margin-top: -15px;
   }
 }
-
 /* Mobile */
 @media (max-width: 600px) {
   .profile-hero {
     padding: 35px 22px;
   }
-
   .profile-avatar {
     max-width: 220px;
   }
-
   .profile-section-nav {
     justify-content: flex-start;
     gap: 5px;
   }
-
   .profile-section-nav a {
     padding: 8px 10px;
     font-size: 0.9rem;
   }
-
   .profile-skills-grid,
   .profile-project-grid {
     grid-template-columns: 1fr;
   }
-
   .profile-info-card,
   .profile-skill-group,
   .profile-project-card,
   .profile-goals-intro {
     padding: 25px;
   }
-
   .profile-contact-actions .btn {
     width: 100%;
   }
-
   .profile-goals-list {
     padding: 25px 25px 25px 45px;
   }
 }
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .profile-avatar {
     animation: none;
   }
-
   .profile-info-card,
   .profile-skill-group,
   .profile-project-card {
     transition: none;
   }
 }
-
 /* ==========================================
    APPLICATION PAGE — ABOUDTECH MIDNIGHT
    ========================================== */
-
 .application-page {
   --app-surface: #14253d;
   --app-raised: #1b344f;
@@ -2161,7 +1966,6 @@ form input[type="submit"]:hover {
   --app-muted: #a9bdd1;
   --app-accent: #83c8ee;
 }
-
 /* Hero */
 .application-hero {
   background:
@@ -2172,12 +1976,10 @@ form input[type="submit"]:hover {
     ),
     linear-gradient(125deg, #101e33, #1b344f);
 }
-
 .application-hero h2 span {
   display: block;
   color: var(--app-accent);
 }
-
 /* Information and notices */
 .application-notice {
   padding: 24px 28px;
@@ -2187,23 +1989,19 @@ form input[type="submit"]:hover {
   border-left: 4px solid var(--app-accent);
   border-radius: 16px;
 }
-
 .application-notice strong {
   color: var(--app-accent);
   font-size: 1.2rem;
 }
-
 .application-notice p,
 .application-small-note {
   color: var(--app-muted);
 }
-
 .application-info-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
-
 .application-info-card {
   min-width: 0;
   padding: 28px;
@@ -2215,12 +2013,10 @@ form input[type="submit"]:hover {
     transform 0.3s ease,
     border-color 0.3s ease;
 }
-
 .application-info-card:hover {
   transform: translateY(-5px);
   border-color: #68a7d7;
 }
-
 .application-info-number {
   display: inline-block;
   margin-bottom: 15px;
@@ -2228,23 +2024,19 @@ form input[type="submit"]:hover {
   font-size: 1.65rem;
   font-weight: bold;
 }
-
 .application-info-card h3 {
   margin: 0 0 12px;
   color: var(--app-text);
   font-size: 1.45rem;
 }
-
 .application-info-card p {
   margin: 0;
   color: var(--app-muted);
 }
-
 .application-small-note {
   margin-top: 22px;
   font-size: 0.95rem;
 }
-
 /* Main form container */
 .application-form-panel {
   width: min(100%, 1050px);
@@ -2255,25 +2047,20 @@ form input[type="submit"]:hover {
   border-radius: 24px;
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.26);
 }
-
 .application-form-header {
   margin-bottom: 30px;
 }
-
 .application-form-header h3 {
   margin: 12px 0;
   color: var(--app-text);
   font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
-
 .application-form-header p {
   color: var(--app-muted);
 }
-
 .application-page form {
   max-width: none;
 }
-
 .application-page .application-fieldset {
   min-width: 0;
   margin: 28px 0;
@@ -2281,31 +2068,26 @@ form input[type="submit"]:hover {
   border: 1px solid var(--app-border);
   border-radius: 17px;
 }
-
 .application-page .application-fieldset legend {
   padding: 0 12px;
   color: var(--app-text);
   font-size: 1.25rem;
   font-weight: bold;
 }
-
 /* Fields */
 .application-field-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
-
 .application-field {
   min-width: 0;
 }
-
 .application-page .application-field label {
   display: block;
   margin: 0 0 8px;
   color: var(--app-text);
 }
-
 .application-page .application-field input,
 .application-page .application-field select,
 .application-page .application-field textarea {
@@ -2323,12 +2105,10 @@ form input[type="submit"]:hover {
     border-color 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 .application-page .application-field select option {
   background: var(--app-field);
   color: var(--app-text);
 }
-
 .application-page .application-field input:focus-visible,
 .application-page .application-field select:focus-visible,
 .application-page .application-field textarea:focus-visible {
@@ -2336,12 +2116,10 @@ form input[type="submit"]:hover {
   border-color: var(--app-accent);
   box-shadow: 0 0 0 3px rgba(115, 181, 242, 0.18);
 }
-
 .application-page .application-field textarea {
   min-height: 165px;
   resize: vertical;
 }
-
 .application-page .application-field small,
 .application-help {
   display: block;
@@ -2349,7 +2127,6 @@ form input[type="submit"]:hover {
   color: var(--app-muted);
   font-size: 0.92rem;
 }
-
 /* Radio and checkbox choices */
 .application-choice-grid {
   display: grid;
@@ -2357,7 +2134,6 @@ form input[type="submit"]:hover {
   gap: 14px;
   margin-top: 20px;
 }
-
 .application-choice {
   display: flex;
   align-items: flex-start;
@@ -2368,11 +2144,9 @@ form input[type="submit"]:hover {
   border: 1px solid var(--app-border);
   border-radius: 12px;
 }
-
 .application-choice:focus-within {
   border-color: var(--app-accent);
 }
-
 .application-page .application-choice input {
   flex: 0 0 auto;
   width: 18px;
@@ -2380,18 +2154,15 @@ form input[type="submit"]:hover {
   margin: 5px 0 0;
   accent-color: #318be2;
 }
-
 .application-page .application-choice label {
   margin: 0;
   color: var(--app-text);
   cursor: pointer;
 }
-
 .application-agreement {
   margin-top: 28px;
   border-color: #426481;
 }
-
 /* Submit button */
 .application-page .application-submit {
   display: inline-flex;
@@ -2412,48 +2183,39 @@ form input[type="submit"]:hover {
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 .application-page .application-submit:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 36px rgba(22, 113, 217, 0.35);
 }
-
 /* Bottom CTA */
 .application-bottom-cta {
   background: linear-gradient(125deg, #102139, #1b4167);
 }
-
 .application-actions {
   justify-content: center;
 }
-
 /* Responsive layout */
 @media (max-width: 950px) {
   .application-info-grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 650px) {
   .application-field-grid,
   .application-choice-grid {
     grid-template-columns: 1fr;
   }
-
   .application-hero,
   .application-bottom-cta {
     padding: 45px 22px;
   }
-
   .application-page .application-fieldset {
     padding: 16px;
   }
-
   .application-actions .btn {
     width: 100%;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .application-info-card,
   .application-page .application-submit,
